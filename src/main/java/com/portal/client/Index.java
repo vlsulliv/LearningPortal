@@ -1,4 +1,4 @@
 package com.portal.client;
 
-public class index {
+public class Index {
 }

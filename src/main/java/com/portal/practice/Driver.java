@@ -1,6 +1,6 @@
 package com.portal.practice;
 
-import com.portal.controller.RankEnum;
+import com.portal.controller.UserAccess;
 import java.util.EnumMap;
 
 /**
@@ -38,12 +38,12 @@ public class Driver {
 
         // EnumMap
         // Creating an empty EnumMap with key
-        EnumMap<RankEnum, String> RankMap = new EnumMap<RankEnum, String>(RankEnum.class);
+        EnumMap<UserAccess, String> RankMap = new EnumMap<UserAccess, String>(UserAccess.class);
 
-        RankMap.put(RankEnum.FIRST, "Priority");
-        RankMap.put(RankEnum.SECOND, "Important tasks that can be delayed");
-        RankMap.put(RankEnum.THIRD, "Low priority tasks");
-        RankMap.put(RankEnum.FOURTH, "TODO tasks or ideas");
+        RankMap.put(UserAccess.FIRST, "Priority");
+        RankMap.put(UserAccess.SECOND, "Important tasks that can be delayed");
+        RankMap.put(UserAccess.THIRD, "Low priority tasks");
+        RankMap.put(UserAccess.FOURTH, "TODO tasks or ideas");
 
         System.out.println("Size of EnumMap in Java: " + RankMap.size());
 
@@ -54,14 +54,14 @@ public class Driver {
 
         // Checking if EnumMap contains a particular key
         System.out.println(
-                "Does gfgMap has " + RankEnum.FIRST + ": "
-                        + RankMap.containsKey((RankEnum.SECOND)));
+                "Does gfgMap has " + UserAccess.FIRST + ": "
+                        + RankMap.containsKey((UserAccess.SECOND)));
 
         // Checking if EnumMap contains a particular value
         System.out.println(
-                "Does gfgMap has :" + RankEnum.THIRD + " : "
+                "Does gfgMap has :" + UserAccess.THIRD + " : "
                         + RankMap.containsValue("Practice Quizes"));
-        System.out.println("Does gfgMap has :" + RankEnum.FOURTH
+        System.out.println("Does gfgMap has :" + UserAccess.FOURTH
                 + " : "
                 + RankMap.containsValue(null));
     }

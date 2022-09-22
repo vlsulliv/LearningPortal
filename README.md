@@ -84,20 +84,19 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Vincent Sullivan** - *SEP2022* - [vlsulliv](https://github.com/vlsulliv)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
-## License
+## License  
 
-This project is licensed under the MIT License - see the `[LICENSE.md](LICENSE.md)` file for details
+This project is licensed under the terms of the [MIT](https://opensource.org/licenses/MIT) license and is available for free.  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
-## Acknowledgments
-
+## Acknowledgments  
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
-
 
 ---
 made with ❤ by vince

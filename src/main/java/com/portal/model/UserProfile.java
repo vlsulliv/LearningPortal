@@ -3,10 +3,15 @@ package com.portal.model;
 import java.util.ArrayList;
 
 public class UserProfile {
-    int age;
-    String fullName;
-    String firstName;
-    String lastName;
+    public String firstName;
+    public String lastName;
+    private String role;
+    private int employeeId;
+
+    UserProfile(String firstName, String lastName, String role) {
+
+    }
+
 
     public int getAge() {
         if (age < 100) {

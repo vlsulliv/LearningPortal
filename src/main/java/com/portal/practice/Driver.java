@@ -1,12 +1,11 @@
 package com.portal.practice;
 
-import com.portal.controller.UserAccess;
+import com.portal.controller.AccessEnum;
 import java.util.EnumMap;
 
 /**
  * Sets the tool tip text.
  *
- * @param text  the text of the tool tip
  */
 public class Driver {
 
@@ -38,12 +37,12 @@ public class Driver {
 
         // EnumMap
         // Creating an empty EnumMap with key
-        EnumMap<UserAccess, String> RankMap = new EnumMap<UserAccess, String>(UserAccess.class);
+        EnumMap<AccessEnum, String> RankMap = new EnumMap<AccessEnum, String>(AccessEnum.class);
 
-        RankMap.put(UserAccess.FIRST, "Priority");
-        RankMap.put(UserAccess.SECOND, "Important tasks that can be delayed");
-        RankMap.put(UserAccess.THIRD, "Low priority tasks");
-        RankMap.put(UserAccess.FOURTH, "TODO tasks or ideas");
+        RankMap.put(AccessEnum.ADMIN, "Priority");
+        RankMap.put(AccessEnum.MANAGER, "Important tasks that can be delayed");
+        RankMap.put(AccessEnum.ADMIN, "Low priority tasks");
+        RankMap.put(AccessEnum.EMPLOYEE, "TODO tasks or ideas");
 
         System.out.println("Size of EnumMap in Java: " + RankMap.size());
 
@@ -54,14 +53,14 @@ public class Driver {
 
         // Checking if EnumMap contains a particular key
         System.out.println(
-                "Does gfgMap has " + UserAccess.FIRST + ": "
-                        + RankMap.containsKey((UserAccess.SECOND)));
+                "Does gfgMap has " + AccessEnum.ADMIN + ": "
+                        + RankMap.containsKey((AccessEnum.MANAGER)));
 
         // Checking if EnumMap contains a particular value
         System.out.println(
-                "Does gfgMap has :" + UserAccess.THIRD + " : "
+                "Does gfgMap has :" + AccessEnum.ADMIN + " : "
                         + RankMap.containsValue("Practice Quizes"));
-        System.out.println("Does gfgMap has :" + UserAccess.FOURTH
+        System.out.println("Does gfgMap has :" + AccessEnum.EMPLOYEE
                 + " : "
                 + RankMap.containsValue(null));
     }

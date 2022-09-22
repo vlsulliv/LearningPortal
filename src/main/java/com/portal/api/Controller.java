@@ -1,6 +1,6 @@
 package com.portal.api;
 
-import com.portal.model.UserProfile;
+import com.portal.client.Users;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,10 +16,10 @@ import java.util.ArrayList;
 @RestController
 public class Controller {
 
-    ArrayList<UserProfile> users = new ArrayList<>();
+    ArrayList<Users> users = new ArrayList<>();
 
     @GetMapping
-    public ArrayList<UserProfile> testAPI() {
+    public ArrayList<Users> testAPI() {
         return users;
     }
 
@@ -29,7 +29,7 @@ public class Controller {
     }
 
     @PostMapping
-    public void addUser(UserProfile user) {
+    public void addUser(Users user) {
         users.add(user);
     }
 

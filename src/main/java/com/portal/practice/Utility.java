@@ -1,6 +1,6 @@
 package com.portal.practice;
 
-public class utility {
+public class Utility {
     // Method with 2 integer parameters
     static int Multiply(int a, int b) {
 

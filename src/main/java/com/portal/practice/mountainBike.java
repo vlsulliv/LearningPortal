@@ -1,6 +1,6 @@
 package com.portal.practice;
 
-public class mountainBike extends bicycle {
+public class mountainBike extends Bicycle {
     // mountainBike subclass add one field
     int seatHeight;
 

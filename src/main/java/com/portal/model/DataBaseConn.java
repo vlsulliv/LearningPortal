@@ -5,12 +5,15 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class dbConn {
+public class DataBaseConn {
     public static void main(String[] args) {
 
         // TODO Auto-generated method stub
         final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-        final String DB_URL = "jdbc:mysql://awsmysql.cinshcjctrws.us-east-1.rds.amazonaws.com:3306/Users";
+        final String DB_URL = "jdbc:awsmysql30.cinshcjctrws.us-east-1.rds.amazonaws.com:3306/Users";
+
+        // Database credentials
+
         final String USER = "admin";
         final String PASS = "admin123";
 

@@ -1,5 +1,6 @@
 package com.portal.controller;
 
+import com.portal.model.UserProfile;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;

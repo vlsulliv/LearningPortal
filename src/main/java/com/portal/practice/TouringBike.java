@@ -1,9 +1,9 @@
 package com.portal.practice;
 
-public class touringBike extends bicycle{
+public class TouringBike extends Bicycle {
     private int serialNumber;
 
-    public touringBike(int gear, int speed) {
+    public TouringBike(int gear, int speed) {
         super(gear, speed);
     }
 

@@ -1,7 +1,7 @@
 package com.portal.practice;
 
 // base class or 'super class'
-public class bicycle {
+public class Bicycle {
     // the Bicycle class has two fields
     public int gear;
     public int speed;
@@ -11,7 +11,7 @@ public class bicycle {
     }
 
     // bicycle class has one constructor
-    public bicycle(int gear, int speed) {
+    public Bicycle(int gear, int speed) {
         this.gear = gear;
         this.speed = speed;
     }

@@ -1,36 +1,63 @@
 package com.portal.api;
 
 import com.portal.client.Users;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
-/*
+/**
  * Annotation: RestController
  *
+ * GET, PUT, POST, DELETE
+ *
  * Class uses Spring MVC to handle web requests.
+ *
+ * @RestController will consume HTTP requests from the client and
+ * send back the appropriate response. Indicates that the data returned
+ * by each method will be written straight into the
+ * response body instead of rendering a template.
+ *
  */
 @RequestMapping
 @RestController
 public class Controller {
-
     ArrayList<Users> users = new ArrayList<>();
 
     @GetMapping
     public ArrayList<Users> testAPI() {
+        System.out.println(users);
         return users;
     }
 
     @GetMapping("/")
     public String index() {
+        System.out.println("user");
         return "Success, User added!";
     }
 
-    @PostMapping
+    @PostMapping("/user")
     public void addUser(Users user) {
         users.add(user);
+        if (users.size() > 0) {
+            System.out.println("user added to 'users' list");
+        } else {
+            System.out.println("user not added");
+        }
     }
 
+    @PutMapping("/users/{id}")
+    public void update(Users user, int id) {
+        for(int i=0; i < users.size(); i++ ) {
+            if (id == i) {
+                users.remove(i);
+                users.add(user);
+            }
+        }
+        System.out.println("user " + user + "  replaced");
+    }
+
+    @DeleteMapping("/user/{id}")
+    public void removeUser(Users user) {
+        users.remove(user);
+        System.out.println("user " + user + " removed from 'users' list");
+    }
 }

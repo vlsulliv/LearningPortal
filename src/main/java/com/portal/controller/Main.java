@@ -1,7 +1,7 @@
 package com.portal.controller;
 
-import com.portal.practice.LinkedListx;
-import com.portal.practice.mountainBike;
+import com.portal.practice.LinkedList;
+import com.portal.practice.MountainBike;
 
 import java.util.EnumMap;
 
@@ -13,7 +13,7 @@ public class Main {
 
     // Access Specifier Keywork ReturnType MethodName(Array of String Type)
     public static void main(String[] args) {
-        mountainBike mb = new mountainBike(3, 4, 5);
+        MountainBike mb = new MountainBike(3, 4, 5);
 
         /*
         System.out.println(mb.toString());
@@ -34,7 +34,7 @@ public class Main {
 
         /*ArrayList.addNum(2);*/
 
-        LinkedListx ll = new LinkedListx();
+        LinkedList ll = new LinkedList();
         ll.addObj(3);
 
         // EnumMap

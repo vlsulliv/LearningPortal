@@ -1,9 +1,8 @@
 package com.portal.client;
 
 public class Users {
-
     private String name;
-    private int pin;
+    private int id;
 
     public Users(int i, String vince) {
     }
@@ -17,10 +16,10 @@ public class Users {
     }
 
     public int getStartDate() {
-        return pin;
+        return id;
     }
 
     public void setStartDate(int startDate) {
-        this.pin = startDate;
+        this.id = startDate;
     }
 }

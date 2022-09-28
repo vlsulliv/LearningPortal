@@ -1,11 +1,11 @@
 package com.portal.practice;
 
-public class mountainBike extends Bicycle {
+public class MountainBike extends Bicycle {
     // mountainBike subclass add one field
     int seatHeight;
 
     // mountainBike subClass has one constructor
-    public mountainBike(int gear, int speed, int startHeight) {
+    public MountainBike(int gear, int speed, int startHeight) {
         // invoking base-class(Bicycle) constructor
         super(gear, speed);
         seatHeight = startHeight;

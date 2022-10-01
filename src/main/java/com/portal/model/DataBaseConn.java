@@ -10,7 +10,7 @@ public class DataBaseConn {
 
         // TODO Auto-generated method stub
         final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-        final String DB_URL = "jdbc:awsdb30.cinshcjctrws.us-east-1.rds.amazonaws.com:3306/admin";
+        final String DB_URL = "jdbc:awsmysql30.cinshcjctrws.us-east-1.rds.amazonaws.com:3306/admin";
 
         // Database credentials
 

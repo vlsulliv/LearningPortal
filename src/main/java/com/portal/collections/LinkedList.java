@@ -1,4 +1,4 @@
-package com.portal.practice;
+package com.portal.collections;
 
 public class LinkedList {
 

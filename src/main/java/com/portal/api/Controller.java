@@ -1,6 +1,6 @@
 package com.portal.api;
 
-import com.portal.client.Users;
+import com.portal.client.User;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -20,10 +20,10 @@ import java.util.ArrayList;
 @RequestMapping
 @RestController
 public class Controller {
-    ArrayList<Users> users = new ArrayList<>();
+    ArrayList<User> users = new ArrayList<>();
 
     @GetMapping
-    public ArrayList<Users> testAPI() {
+    public ArrayList<User> testAPI() {
         System.out.println(users);
         return users;
     }
@@ -35,7 +35,7 @@ public class Controller {
     }
 
     @PostMapping("/user")
-    public void addUser(Users user) {
+    public void addUser(User user) {
         users.add(user);
         if (users.size() > 0) {
             System.out.println("user added to 'users' list");
@@ -45,7 +45,7 @@ public class Controller {
     }
 
     @PutMapping("/users/{id}")
-    public void update(Users user, int id) {
+    public void update(User user, int id) {
         for(int i=0; i < users.size(); i++ ) {
             if (id == i) {
                 users.remove(i);
@@ -56,7 +56,7 @@ public class Controller {
     }
 
     @DeleteMapping("/user/{id}")
-    public void removeUser(Users user) {
+    public void removeUser(User user) {
         users.remove(user);
         System.out.println("user " + user + " removed from 'users' list");
     }

@@ -1,15 +1,9 @@
 package com.portal.utility;
 
 import java.text.SimpleDateFormat;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class Time {
-    public class ThreadLocalExample {
-        public ThreadLocal<SimpleDateFormat> formatter = new ThreadLocal<SimpleDateFormat>() {
-            @Override
-            protected SimpleDateFormat initialValue() {
-                return new SimpleDateFormat("YYYY-MM-dd");
-            }
-        };
-    }
-
+    private static AtomicReference<Long> currentTime =
+            new AtomicReference<>(System.currentTimeMillis());
 }

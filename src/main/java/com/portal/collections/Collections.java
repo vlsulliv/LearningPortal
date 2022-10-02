@@ -8,7 +8,7 @@ import java.util.*;
  * Java program to demonstrate the collection framework. Collection interface (java.util.Collection)
  * and Map interface (java.util.Map) are the two main "root" interfaces of Java Collection Classes.
  *
- * https://imgpile.com/i/Tk508P
+ * <a href="https://imgpile.com/i/Tk508P">...</a>
  *
  * @author vincent sullivan
  */
@@ -38,11 +38,11 @@ public class Collections {
         System.out.println("value of vector index zero : " + v.elementAt(0));
         System.out.println("value corresponding to key 1 in hashtable : " + ht.get(1));
 
-
         /**
          * working with vector
          */
         System.out.println("====================================");
+
         Vector<Integer> vector = new Vector<Integer>();
         for (int i = 1; i <= 5; i++ )
             vector.add(i);
@@ -108,6 +108,7 @@ public class Collections {
 
         // Printing the top element of PriorityQueue
         System.out.println(pQueue.peek());
+
         System.out.println("====================================");
         /**
          * Set Interface
@@ -120,9 +121,6 @@ public class Collections {
          * Refer to <a href="https://www.geeksforgeeks.org/set-in-java/">Set Interface</a>
          *
          */
-
-        /** Set<T> hs = new HashSet<>(); */
-
         HashSet<String> hs = new HashSet<String>();
         hs.add("in");
         hs.add("god");
@@ -134,6 +132,7 @@ public class Collections {
         while (itra.hasNext()) {
             System.out.println(itra.next());
         }
+
         System.out.println("====================================");
         /**
          * ArrayList
@@ -150,10 +149,9 @@ public class Collections {
          */
         ArrayList<Integer> numList = new ArrayList<Integer>();
         // Method to add objects to arrayList, removes one element, and prints results
-        for (Integer i = 0; i < 5; i++)
-
-            // adding Integers to arrayList
+        for (int i = 0; i < 5; i++) {
             numList.add(i);
+        }
 
         // Print ArrayList
         System.out.println(numList);
@@ -165,9 +163,10 @@ public class Collections {
         System.out.println(numList);
 
         // Print values one by one
-        for (int i = 0; i < numList.size(); i++)
+        for (int i = 0; i < numList.size(); i++) {
             System.out.print(numList.get(i) + " ");
-        System.out.println("====================================");
+        };
+
         /**
          * LinkedList
          *
@@ -175,11 +174,19 @@ public class Collections {
          * value and a pointer to the following node. Connected records can powerfully increment in size. It is also
          * easy to insert and erase from a linked list.
          */
-        Node head = null;
-        Node next;
-        LinkedList linkedlist = new LinkedList();
+        System.out.println("====================================");
 
-        /** public void push() { } */
+        LinkedList<Integer> list = new LinkedList<Integer>();
 
+        list.add(2);
+        list.add(3);
+        list.add(4);
+
+        System.out.println(list);
+        list.pop();
+        System.out.println(list);
+
+
+        System.out.println("====================================");
     }
 }

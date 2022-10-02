@@ -1,22 +1,27 @@
 package com.portal.collections;
 
+import org.apache.commons.codec.CharEncoding;
+
 public class Wrappers {
     /**
      * data types: reference and primitive
      *
-     * primitives    Wrapper
-     * boolean       Boolean
-     * char          Character
-     * int           Integer
-     * double        Double
-     *
+     * primitives  Wrapper
+     * boolean     Boolean
+     * char        Character
+     * int         Integer
+     * double       Double
+     * long         String
      */
-
-    static Boolean a = true;
     boolean b = false;
+    int num;
+    char x;
+    double z;
+    long y = 5;
+    long w = 3;
+
 
     public static void main(String[] args) {
-        System.out.println(a.booleanValue());
-        System.out.println(a.equals(a));
+
     }
 }

@@ -1,18 +1,12 @@
 package com.portal.utility;
 
+import javax.print.attribute.Size2DSyntax;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class Utility {
-    // Method with 2 integer parameters
-    static int Multiply(int a, int b) {
-
-        // Returns product of integer numbers
-        return a * b;
-    }
-
-    // Method 2
-    // With same name but with 2 double parameters
-    static double Multiply(double a, double b) {
-
-        // Returns product of double numbers
-        return a * b;
+    public static void main(String[] args) {
+        long clock = System.currentTimeMillis();
+        long formatter = 0;
     }
 }

@@ -1,12 +1,5 @@
 package com.portal.collections;
 
-import io.netty.util.internal.MathUtil;
-import org.apache.commons.lang3.ObjectUtils;
-import org.apache.logging.log4j.core.pattern.NotANumber;
-
-import java.lang.Math.*;
-import java.security.SecureRandom;
-import java.lang.Object.*;
 /**
  * The HelloWorld program implements methods
  * from Java Math class.
@@ -15,12 +8,14 @@ import java.lang.Object.*;
  * @version 1.0
  * @since   2022-09-27
  */
-public class Math {
+public class Compute {
     static int result;
     static double ans;
+    /**
+     * Constants PI and e
+     */
     static double PI;
     static double E;
-
 
     public static int addNum(int numA, int numB) {
         return result = numA + numB;
@@ -36,30 +31,53 @@ public class Math {
 
     public static long absNum(int numA) {
         if (numA < 0) {
-         return result =  StrictMath.abs(numA);
+         return StrictMath.abs(numA);
         } else {
             return numA;
         }
     }
-
+    /**
+     * takes number and returns sqrt root
+     * @param numA input number
+     * @return square root of input number
+     */
     public static double sqrtNum(double numA) {
-        double sqrt = StrictMath.sqrt(numA);
-        return sqrt;
+        ans = StrictMath.sqrt(numA);
+        return ans;
     }
+    /**
+     * accepts double as inputl returns natural log.
+     * @param numA positive number
+     * @return natural log of input `numA`
+     */
 
     public static double logNum(double numA) {
-        ans = StrictMath.log(StrictMath.abs(numA));
-        return ans;
+        return StrictMath.log(StrictMath.abs(numA));
     }
-
+    /**
+     * compares two numbers and returns the larger value.
+     * @param numA double
+     * @param numB double
+     * @return the larger value of type double.
+     */
     public static double maxNum(double numA, double numB) {
-        ans = StrictMath.max(numA, numB);
-        return ans;
+        return StrictMath.max(numA, numB);
     }
-
+    /**
+     *
+     * @param numA
+     * @return
+     */
     public static double exp(double numA) {
-        ans = StrictMath.exp(numA);
-        return ans;
+        return StrictMath.exp(numA);
+    }
+    /**
+     *
+     * @param NumA
+     * @return
+     */
+    public static double randNum(double NumA) {
+        return StrictMath.random();
     }
 
     public static void main(String[] args) {

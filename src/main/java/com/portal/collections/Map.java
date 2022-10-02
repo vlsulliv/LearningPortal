@@ -7,7 +7,6 @@ import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.TreeMap;
-
 /**
  * `Maps`
  *
@@ -60,7 +59,7 @@ public class Map {
         /** print the key-value pairs */
         System.out.println(treeM.entrySet());
 
-        /** access value associated with key */
+        /** access value associated with key  */
         System.out.println(treeM.get(1));
 
         System.out.println("=============================");

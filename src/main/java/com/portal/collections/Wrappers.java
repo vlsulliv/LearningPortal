@@ -20,6 +20,8 @@ public class Wrappers {
     long y = 5;
     long w = 3;
 
+    char[] charArray = { 'a', 'b', 'c', 'd', 'e' };
+
 
     public static void main(String[] args) {
 

@@ -8,7 +8,6 @@ package com.portal.inheritance;
 interface Bike  {
     int gear = 0;
 
-
     public void changeGear(int gear);
 
 }

@@ -112,12 +112,12 @@ public class Collections {
         System.out.println("====================================");
         /**
          * Set Interface
-         *
+         * <p>
          * Set Interface: A set is an unordered collection of objects in which duplicate values cannot be stored.
          * This collection is used when we wish to avoid the duplication of the objects and wish to store only the
          * unique objects. This set interface is implemented by various classes like HashSet, TreeSet, LinkedHashSet,
          * etc. Since all the subclasses implement the set, we can instantiate a set object with any of these classes.
-         *
+         * </p>
          * Refer to <a href="https://www.geeksforgeeks.org/set-in-java/">Set Interface</a>
          *
          */
